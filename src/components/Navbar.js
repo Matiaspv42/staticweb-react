@@ -1,8 +1,19 @@
 import React from "react";
+import '../style.css'
+import reactLogo from '../images/react-logo.png'
 
 
 export default function Navbar(){
     return (
-        <h1>Navbar goes here</h1>
+        <nav className="navBar">
+            <div className="logo">
+              <img src={reactLogo} width={'50px'} alt=''/>
+              <p>ReactFacts</p>
+            </div>
+            
+            <div className="subtitle">
+                <p>React Course - Project 1</p>
+            </div>
+        </nav>
     )
 }
